@@ -21,6 +21,12 @@ img {
   max-width: 100%;
 }
 
+.project1Container {
+  background-color: #79CAF9;
+  color: white;
+}
+
+
 .project2Container {
   background-color: #20457C;
   color: white;
@@ -31,6 +37,29 @@ img {
   font-family: 'Fjalla One', sans-serif;
   font-size: 72px;
 }
+
+.project3Text {
+  color: #ffcc5c;
+  font-family: 'Lobster', cursive;
+  font-size: 72px;
+}
+
+.project3Container {
+  background-color: #4298B5;
+  color: white;
+}
+
+.project4Text {
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 72px;
+}
+
+.project4Container {
+  background: linear-gradient(to top left, #FE709C, #FFABA4);
+  color: white;
+}
+
 
 a {
   text-decoration: none;
