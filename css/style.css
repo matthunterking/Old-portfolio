@@ -2,7 +2,8 @@ body {
   height: 100vh;
   background-color: #088edf;
   color: white;
-  font-family: helvetica; }
+  font-family: helvetica;
+  text-align: center; }
 
 div {
   border-radius: 10px;
@@ -50,6 +51,7 @@ img {
   color: white; }
 
 a {
+  color: white;
   text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
