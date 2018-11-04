@@ -1,57 +1,101 @@
 body {
+  width: 100%;
   height: 100vh;
-  background-color: #088edf;
-  color: white;
-  font-family: helvetica;
-  text-align: center; }
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  scroll-snap-points-y: repeat(100%);
+  -ms-scroll-snap-points-y: repeat(100%);
+}
 
-div {
-  border-radius: 10px;
+section {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin-bottom: 10px;
-  margin-left: 20%;
-  width: 60%;
-  color: #394856;
-  border: 5px solid #e10976;
+  color: #fff;
+  font-size: 20px;
+  scroll-snap-align: center;
+}
+
+#header {
+  background-color: #5ab92c;
+}
+
+#about {
+  background-color: #5ab92c;
+}
+
+.projectContainer {
+  width: 80%;
+  height: 600px;
+  /* border: 3px solid blue; */
+  overflow: auto;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
+.project {
+  flex-basis: 15%;
+  flex-shrink: 0;
+  max-height: 600px;
+  transition: all 3s;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  filter: grayscale(100%);
+}
+
+.projectDetails {
+  visibility: hidden;
   background-color: white;
-  min-height: 300px; }
+  width: 40%;
+  height: 300px;
+}
 
-img {
-  max-width: 100%; }
+.project1Pic {
+  background-image: url('codemon-Csmess-Front.png');
+  background-size: cover;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-.project1Container {
-  background-color: #79CAF9;
-  color: white; }
+.gap {
+  flex-basis: 1%;
+  flex-shrink: 0;
+  height: 600px;
+  transition: all 3.5s;
+}
 
-.project2Container {
-  background-color: #20457C;
-  color: white; }
+.project1 {
+  background-color: red;
+}
+.project2 {
+  background-color: green;
+}
+.project3 {
+  background-color: blue;
+}
+.project4 {
+  background-color: purple;
+}
+.project5 {
+  background-color: orange;
+}
 
-.project2Text {
-  color: #ECDFBD;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 72px; }
-
-.project3Text {
-  color: #ffcc5c;
-  font-family: 'Lobster', cursive;
-  font-size: 72px; }
-
-.project3Container {
-  background-color: #4298B5;
-  color: white; }
-
-.project4Text {
-  color: white;
-  font-family: 'Kaushan Script', cursive;
-  font-size: 72px; }
-
-.project4Container {
-  background: linear-gradient(to top left, #FE709C, #FFABA4);
-  color: white; }
-
-a {
-  color: white;
-  text-decoration: none; }
-
-/*# sourceMappingURL=style.css.map */
+.details {
+  width: 50%;
+  height: 400px;
+  background-color: lightblue;
+}
