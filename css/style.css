@@ -3,13 +3,11 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
   flex-direction: column;
-  scroll-snap-type: y mandatory;
   overflow-x: auto;
   white-space: nowrap;
   display: flex;
-  scroll-snap-points-y: repeat(100%);
-  -ms-scroll-snap-points-y: repeat(100%);
 }
 
 section {
@@ -20,18 +18,84 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #fff;
-  font-size: 20px;
-  scroll-snap-align: center;
+}
+
+.title {
+  z-index: 6;
+}
+
+nav {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 12px;
+  color: #353333;
+  letter-spacing: 0.54px;
+  z-index: 6;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 32px;
+}
+
+p {
+  font-family: 'Noto Serif', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.selected {
+  background-color: #FF7D08;
+}
+
+.navItem {
+  width: 100px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.diamond {
+  width: 19px;
+  height: 19px;
+  transform: rotate(-315deg);
+  border: 0.25px solid #353333;
 }
 
 #header {
-  background-color: #5ab92c;
+  background-color: #4AE1BA;
 }
 
 #about {
-  background-color: #5ab92c;
+  background-color: #4AE1BA;
 }
+
+.circle {
+  background-image: url('../Lines.png');
+  background-attachment: fixed;
+  background-size: 50%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+  width: 400px;
+  height: 400px;
+  opacity: 0.2;
+  transition: all 2s;
+}
+
+
 
 .projectContainer {
   width: 80%;
@@ -51,7 +115,8 @@ section {
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
   filter: grayscale(100%);
 }
@@ -79,23 +144,87 @@ section {
 }
 
 .project1 {
-  background-color: red;
+  background-Image: url(./images/project1background.jpg);
 }
+
+.project1Logo {
+  background-Image: url(./images/project1Logo.png);
+  width: 150px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
+
 .project2 {
-  background-color: green;
+  background-Image: url(./images/project2background.jpg);
 }
+
+.project2Logo {
+  width: 150px;
+  height: 100px;
+  margin-top: 40px;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 40px;
+  color:  #ECDFBD;
+}
+
+
 .project3 {
-  background-color: blue;
+  background-Image: url(./images/project3background.png);
+  background-color: #4298B5;
 }
+
+.project3Logo {
+  width: 150px;
+  height: 100px;
+  margin-top: 40px;
+  font-family: 'Lobster', sans-serif;
+  font-size: 26px;
+  color:  #ffcc5c;
+}
+
 .project4 {
-  background-color: purple;
+  background-Image: url(./images/project4background.jpg);
 }
+
+.project4Logo {
+  width: 150px;
+  height: 100px;
+  margin-top: 40px;
+  font-family: 'Kaushan Script', sans-serif;
+  font-size: 22px;
+  color:  #FE709C;
+}
+
 .project5 {
-  background-color: orange;
+  background-Image: url(./images/project5background.png);
+}
+
+.project5Logo {
+  width: 150px;
+  height: 100px;
+  margin-top: 40px;
+  font-family: 'Anton', sans-serif;
+  font-size: 28px;
+  color:  white;
 }
 
 .details {
   width: 50%;
   height: 400px;
   background-color: lightblue;
+}
+
+.sectionHeading {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 24px;
+  color: #353333;
+  letter-spacing: 0.63px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title {
+  position: absolute;
 }
