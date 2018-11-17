@@ -14,6 +14,28 @@ canvas {
   position: absolute;
 }
 
+.technologies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 25%;
+}
+
+i {
+  font-size: 40px;
+}
+
 section {
   min-width: 100%;
   min-height: 100vh;
@@ -122,11 +144,9 @@ a {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  filter: grayscale(100%);
 }
 
 .projectDetails {
-  visibility: hidden;
   background-color: white;
   width: 40%;
   height: 300px;
@@ -148,11 +168,11 @@ a {
 }
 
 .project1 {
-  background-Image: url(./images/project1background.jpg);
+  background-Image: url(./images/Background_Codemon.png);
 }
 
 .project1Logo {
-  background-Image: url(./images/project1Logo.png);
+  background-Image: url(./images/Logo_codemon.png);
   width: 150px;
   height: 100px;
   background-size: contain;
@@ -161,57 +181,155 @@ a {
 }
 
 .project2 {
-  background-Image: url(./images/project2background.jpg);
+  background-Image: url(./images/Background_nibble.png);
 }
 
 .project2Logo {
+  background-Image: url(./images/Logo_Nibble.png);
   width: 150px;
   height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin-top: 40px;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 40px;
-  color:  #ECDFBD;
 }
 
 
 .project3 {
-  background-Image: url(./images/project3background.png);
-  background-color: #4298B5;
+  background-Image: url(./images/Background_neighbourgood.png);
 }
 
 .project3Logo {
+  background-Image: url(./images/Logo_neighbourgood.png);
   width: 150px;
   height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin-top: 40px;
-  font-family: 'Lobster', sans-serif;
-  font-size: 26px;
-  color:  #ffcc5c;
 }
 
 .project4 {
-  background-Image: url(./images/project4background.jpg);
+  background-Image: url(./images/Background_Love.png);
 }
 
 .project4Logo {
+  background-Image: url(./images/Logo_Love.png);
   width: 150px;
   height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin-top: 40px;
-  font-family: 'Kaushan Script', sans-serif;
-  font-size: 22px;
-  color:  #FE709C;
 }
 
 .project5 {
-  background-Image: url(./images/project5background.png);
+  background-Image: url(./images/Background_nfl.png);
 }
 
 .project5Logo {
+  background-Image: url(./images/Logo_NFL.png);
   width: 150px;
   height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin-top: 40px;
-  font-family: 'Anton', sans-serif;
-  font-size: 28px;
-  color:  white;
+}
+.projectDetails1 {
+  display: none;
+  width: 100%;
+}
+
+.projectDetailsContainer1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+}
+.projectDetailsContainer1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+}
+.projectDetailsContainer2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+}
+.projectDetailsContainer3 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+}
+.projectDetailsContainer4 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+}
+.projectDetailsContainer5 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+}
+
+.projectText {
+  color: white;
+}
+
+.projectScreenshot1 {
+  background-image: url(./images/ScreenShotProject1.png);
+  width: 40%;
+  height: 400px;
+  background-size: cover;
+  border: 1px solid white;
+}
+.projectScreenshot2 {
+  background-image: url(./images/ScreenShotProject2.png);
+  width: 40%;
+  height: 400px;
+  background-size: cover;
+  border: 1px solid white;
+}
+.projectScreenshot3 {
+  background-image: url(./images/ScreenShotProject3.png);
+  width: 40%;
+  height: 400px;
+  background-size: cover;
+  border: 1px solid white;
+}
+.projectScreenshot4 {
+  background-image: url(./images/ScreenShotProject4.png);
+  width: 40%;
+  height: 400px;
+  background-size: cover;
+  border: 1px solid white;
+}
+.projectScreenshot5 {
+  background-image: url(./images/ScreenShotProject5.png);
+  width: 40%;
+  height: 400px;
+  background-size: cover;
+  border: 1px solid white;
+}
+.projectDetails2 {
+  display: none;
+}
+.projectDetails3 {
+  display: none;
+}
+.projectDetails4 {
+  display: none;
+}
+.projectDetails5 {
+  display: none;
 }
 
 .details {

@@ -7,20 +7,16 @@ $(() => {
   $(window).on('scroll', () => {
     if(moving) return;
     if($(window).scrollTop() > $(locations[currentLocation]).offset().top) {
-      console.log('down');
       currentLocation ++;
       if(currentLocation > locations.length - 1) {
         currentLocation = locations.length - 1;
       }
-      console.log(currentLocation);
       movePage(locations[currentLocation]);
     } else {
-      console.log('up');
       currentLocation --;
       if(currentLocation < 0) {
         currentLocation = 0;
       }
-      console.log(currentLocation);
       movePage(locations[currentLocation]);
     }
   });
@@ -51,61 +47,53 @@ $(() => {
   const projects = $('.project');
   const gaps = $('.gap');
 
-  projects.on('mouseover', grow);
-  projects.on('mouseout', shrink);
+  projects.on('mouseover', hover);
 
-  function grow() {
-    $(this).css('flex-basis', '80%');
-    if(parseInt($(this).attr('class').split(' ')[1][7]) < 3) {
+  function hover() {
+    projects.off('mouseover', hover);
+    console.log(projects, 'dont have hover')
+    console.log('hover', $(this)[0].id);
+    grow($(this)[0].id);
+  }
+
+  function mouseout() {
+    console.log('mouseOut', $(this));
+    shrink($(this)[0].id);
+  }
+
+  function grow(id) {
+    $(`#${id}`).css('flex-basis', '80%');
+    if(parseInt(id) < 3) {
       gaps.first().css('flex-basis', '48%');
-    } else if(parseInt($(this).attr('class').split(' ')[1][7]) > 3) {
+    } else if(parseInt(id) > 3) {
       gaps.last().css('flex-basis', '48%');
     }
-    setTimeout(() => {
-      $('.projectDetails').css('visibility', 'visible');
-      $(this).css('filter', 'grayscale(0%)');
-    }, 3000);
+    $(`.projectDetails${id}`).fadeIn();
+    $(`#${id}`).on('mouseout', mouseout);
+    console.log($(`#${id}`), 'has mouseout');
+
   }
 
-  function shrink() {
-    $(this).css('flex-basis', '15%');
-    $('.projectDetails').css('visibility', 'hidden');
-    $(this).css('filter', 'grayscale(100%)');
-    if(parseInt($(this).attr('class').split(' ')[1][7]) < 3) {
+  function shrink(id) {
+    projects.off('mouseout', mouseout);
+    console.log(projects, 'dont have mouseout');
+    $(`.projectDetails${id}`).fadeOut();
+    $(`#${id}`).css('flex-basis', '15%');
+    if(parseInt(id) < 3) {
       gaps.first().css('flex-basis', '1%');
-    } else if(parseInt($(this).attr('class').split(' ')[1][7]) > 3) {
+    } else if(parseInt(id) > 3) {
       gaps.last().css('flex-basis', '1%');
     }
+    projects.on('mouseover', hover);
+    console.log(projects, 'have hover');
   }
 
-  // let circles = [];
-  // let currentCircle;
-  //
-  // $('#header').on('mousemove', (event) => {
-  //   const circle = $('<div class="circle"></div>');
-  //   currentCircle = circle;
-  //   $('#header').append(circle);
-  //   circles.push(circle);
-  //   circle.css({ top: event.clientY - 200, left: event.clientX - 200 });
-  //   const circlesToRemove = circles.filter((circle, index) => index !== circles.length -1);
-  //   console.log(circlesToRemove);
-  //   circlesToRemove.forEach(circle => {
-  //     setTimeout(() => {
-  //       circle.css({ top: event.clientY - 50, left: event.clientX - 50, height: '100px', width: '100px', opacity: 0 });
-  //       currentCircle.css({ top: event.clientY - 200, left: event.clientX - 200, height: '400px', width: '400px', opacity: 0.6 });
-  //     }, 100);
-  //   });
-  // });
+  $('.technology').on('mouseover', function() {
+    $(this).css('color', '#FF7D08');
+  });
 
-  // setInterval(() => {
-  //   circles.forEach(circle => circle.remove());
-  //   const circle = $('<div class="circle"></div>');
-  //   currentCircle = circle;
-  //   circles.push(circle);
-  //   $('#header').append(circle);
-  //   console.log(circles);
-  //   circle.css({ top: event.clientY - 200, left: event.clientX - 200 });
-  // }, 4000);
-
+  $('.technology').on('mouseout', function() {
+    $(this).css('color', 'white');
+  });
 
 });
