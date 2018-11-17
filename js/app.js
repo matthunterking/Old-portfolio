@@ -70,7 +70,7 @@ $(() => {
   function shrink() {
     $(this).css('flex-basis', '15%');
     $('.projectDetails').css('visibility', 'hidden');
-    // $(this).css('filter', 'grayscale(100%)');
+    $(this).css('filter', 'grayscale(100%)');
     if(parseInt($(this).attr('class').split(' ')[1][7]) < 3) {
       gaps.first().css('flex-basis', '1%');
     } else if(parseInt($(this).attr('class').split(' ')[1][7]) > 3) {
@@ -78,34 +78,34 @@ $(() => {
     }
   }
 
-  let circles = [];
-  let currentCircle;
+  // let circles = [];
+  // let currentCircle;
+  //
+  // $('#header').on('mousemove', (event) => {
+  //   const circle = $('<div class="circle"></div>');
+  //   currentCircle = circle;
+  //   $('#header').append(circle);
+  //   circles.push(circle);
+  //   circle.css({ top: event.clientY - 200, left: event.clientX - 200 });
+  //   const circlesToRemove = circles.filter((circle, index) => index !== circles.length -1);
+  //   console.log(circlesToRemove);
+  //   circlesToRemove.forEach(circle => {
+  //     setTimeout(() => {
+  //       circle.css({ top: event.clientY - 50, left: event.clientX - 50, height: '100px', width: '100px', opacity: 0 });
+  //       currentCircle.css({ top: event.clientY - 200, left: event.clientX - 200, height: '400px', width: '400px', opacity: 0.6 });
+  //     }, 100);
+  //   });
+  // });
 
-  $('#header').on('mousemove', (event) => {
-    const circle = $('<div class="circle"></div>');
-    currentCircle = circle;
-    $('#header').append(circle);
-    circles.push(circle);
-    circle.css({ top: event.clientY - 200, left: event.clientX - 200 });
-    const circlesToRemove = circles.filter((circle, index) => index !== circles.length -1);
-    console.log(circlesToRemove);
-    circlesToRemove.forEach(circle => {
-      setTimeout(() => {
-        circle.css({ top: event.clientY - 50, left: event.clientX - 50, height: '100px', width: '100px', opacity: 0 });
-        currentCircle.css({ top: event.clientY - 200, left: event.clientX - 200, height: '400px', width: '400px', opacity: 0.6 });
-      }, 100);
-    });
-  });
-
-  setInterval(() => {
-    circles.forEach(circle => circle.remove());
-    const circle = $('<div class="circle"></div>');
-    currentCircle = circle;
-    circles.push(circle);
-    $('#header').append(circle);
-    console.log(circles);
-    circle.css({ top: event.clientY - 200, left: event.clientX - 200 });
-  }, 4000);
+  // setInterval(() => {
+  //   circles.forEach(circle => circle.remove());
+  //   const circle = $('<div class="circle"></div>');
+  //   currentCircle = circle;
+  //   circles.push(circle);
+  //   $('#header').append(circle);
+  //   console.log(circles);
+  //   circle.css({ top: event.clientY - 200, left: event.clientX - 200 });
+  // }, 4000);
 
 
 });

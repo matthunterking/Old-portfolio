@@ -10,6 +10,10 @@ body {
   display: flex;
 }
 
+canvas {
+  position: absolute;
+}
+
 section {
   min-width: 100%;
   min-height: 100vh;
