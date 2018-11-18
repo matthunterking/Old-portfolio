@@ -23,6 +23,7 @@ $(() => {
 
 
   $('a').on('click', function() {
+    if(moving) return;
     movePage(this.hash);
   });
 
@@ -47,45 +48,62 @@ $(() => {
   const projects = $('.project');
   const gaps = $('.gap');
 
-  projects.on('mouseover', hover);
+  // function hover() {
+  //   projects.off('mouseover', hover);
+  //   console.log(projects, 'dont have hover');
+  //   console.log('hover', $(this)[0].id);
+  //   grow($(this)[0].id);
+  // }
+  //
+  // function mouseout() {
+  //   console.log('mouseOut', $(this));
+  //   shrink($(this)[0].id);
+  // }
 
-  function hover() {
-    projects.off('mouseover', hover);
-    console.log(projects, 'dont have hover')
-    console.log('hover', $(this)[0].id);
-    grow($(this)[0].id);
-  }
 
-  function mouseout() {
-    console.log('mouseOut', $(this));
-    shrink($(this)[0].id);
-  }
+  let animationPlaying = false;
 
-  function grow(id) {
-    $(`#${id}`).css('flex-basis', '80%');
+  projects.on('mouseover', grow);
+
+
+  function grow() {
+    if(animationPlaying) return;
+    projects.off('mouseover', grow);
+    const id = $(this)[0].id;
+    animationPlaying = true;
+    $(this).css('flex-basis', '80%');
     if(parseInt(id) < 3) {
       gaps.first().css('flex-basis', '48%');
     } else if(parseInt(id) > 3) {
       gaps.last().css('flex-basis', '48%');
     }
-    $(`.projectDetails${id}`).fadeIn();
-    $(`#${id}`).on('mouseout', mouseout);
-    console.log($(`#${id}`), 'has mouseout');
+    setTimeout(() => {
+      $(`.projectDetails${id}`).append(`<div class='projectText'>Project ${id} was great</div>
+      <div class='projectScreenshot${id}'></div>`);
+      $(`#${id}`).on('mouseout', shrink);
+      animationPlaying = false;
+    }, 3000);
 
   }
 
-  function shrink(id) {
-    projects.off('mouseout', mouseout);
-    console.log(projects, 'dont have mouseout');
-    $(`.projectDetails${id}`).fadeOut();
+  function shrink() {
+    if(animationPlaying) return;
+    animationPlaying = true;
+    const id = $(this)[0].id;
+    $(this).off('mouseout', shrink);
+    // $(`.projectDetails${id}`).fadeOut();
+    $('.projectText').remove();
+    $(`.projectScreenshot${id}`).remove();
     $(`#${id}`).css('flex-basis', '15%');
     if(parseInt(id) < 3) {
       gaps.first().css('flex-basis', '1%');
     } else if(parseInt(id) > 3) {
       gaps.last().css('flex-basis', '1%');
     }
-    projects.on('mouseover', hover);
-    console.log(projects, 'have hover');
+    setTimeout(() => {
+      projects.on('mouseover', grow);
+      animationPlaying = false;
+    }, 3000);
   }
 
   $('.technology').on('mouseover', function() {
