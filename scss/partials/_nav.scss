@@ -34,7 +34,12 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+  nav {
+    height: 55px;
+    top: 25px;
+    left: 25px;
+  }
+  .navItem {
+    margin-top: 26px;
+  }
 }
