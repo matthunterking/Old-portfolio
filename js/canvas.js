@@ -55,7 +55,6 @@ $(() => {
       line.draw();
       lines.push(line);
       x += (size * 3);
-      console.log(x);
       if(x >= innerWidth) {
         x = 0;
         y += (size * 3);

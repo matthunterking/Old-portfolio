@@ -19,3 +19,15 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.projectTitle {
+  font-family: $standardFont;
+  font-size: $subTitleSize;
+  color: white;
+}
+
+.projectText {
+  font-family: $standardFont;
+  font-size: $projectFontSize;
+  color: white;
+}

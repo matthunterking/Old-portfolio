@@ -1,7 +1,6 @@
 .projectContainer {
   width: 80%;
-  height: 600px;
-  /* border: 3px solid blue; */
+  min-height: 600px;
   overflow: auto;
   flex-wrap: nowrap;
   display: flex;
@@ -19,20 +18,11 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-}
-
-.projectDetails {
-  background-color: white;
-  width: 40%;
-  height: 300px;
-}
-
-.project1Pic {
-  background-image: url('codemon-Csmess-Front.png');
-  background-size: cover;
-  background-color: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
+  &.project1 { background-Image: url(./images/Background_Codemon.png) }
+  &.project2 { background-Image: url(./images/Background_nibble.png) }
+  &.project3 { background-Image: url(./images/Background_neighbourgood.png) }
+  &.project4 { background-Image: url(./images/Background_Love.png) }
+  &.project5 { background-Image: url(./images/Background_nfl.png) }
 }
 
 .gap {
@@ -42,172 +32,126 @@
   transition: all 3.5s;
 }
 
-.project1 {
-  background-Image: url(./images/Background_Codemon.png);
-}
-
-.project1Logo {
-  background-Image: url(./images/Logo_codemon.png);
+.projectLogo {
   width: 150px;
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 40px;
+  &.project1Logo { background-Image: url(./images/Logo_codemon.png) }
+  &.project2Logo { background-Image: url(./images/Logo_Nibble.png) }
+  &.project3Logo { background-Image: url(./images/Logo_neighbourgood.png) }
+  &.project4Logo { background-Image: url(./images/Logo_Love.png) }
+  &.project5Logo { background-Image: url(./images/Logo_NFL.png) }
 }
 
-.project2 {
-  background-Image: url(./images/Background_nibble.png);
-}
-
-.project2Logo {
-  background-Image: url(./images/Logo_Nibble.png);
-  width: 150px;
-  height: 100px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 40px;
-}
-
-
-.project3 {
-  background-Image: url(./images/Background_neighbourgood.png);
-}
-
-.project3Logo {
-  background-Image: url(./images/Logo_neighbourgood.png);
-  width: 150px;
-  height: 100px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 40px;
-}
-
-.project4 {
-  background-Image: url(./images/Background_Love.png);
-}
-
-.project4Logo {
-  background-Image: url(./images/Logo_Love.png);
-  width: 150px;
-  height: 100px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 40px;
-}
-
-.project5 {
-  background-Image: url(./images/Background_nfl.png);
-}
-
-.project5Logo {
-  background-Image: url(./images/Logo_NFL.png);
-  width: 150px;
-  height: 100px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 40px;
-}
-.projectDetails1 {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
+.projectDetails {
   pointer-events: none;
+  width: 100%;
+  height: 400px;
+  &.projectDetails1 { display: none }
+  &.projectDetails2 { display: none }
+  &.projectDetails3 { display: none }
+  &.projectDetails4 { display: none }
+  &.projectDetails5 { display: none }
 }
 
+.projectDetailsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+  width: 100%;
+  white-space: normal;
+}
 
-.projectDetailsContainer1 {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
+.projectTextContainer {
+  width: 40%;
   height: 400px;
-  pointer-events: none;
+  text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
 }
-.projectDetailsContainer2 {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
-  height: 400px;
-}
-.projectDetailsContainer3 {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
-  height: 400px;
-}
-.projectDetailsContainer4 {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
-  height: 400px;
-}
-.projectDetailsContainer5 {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
-  height: 400px;
+
+.projectScreenshot {
+  width: 45%;
+  height: 250px;
+  border: 1px solid white;
+  background-size: cover;
+  &.projectScreenshot1 { background-image: url(./images/ScreenShotProject1.png) }
+  &.projectScreenshot2 { background-image: url(./images/ScreenShotProject2.png) }
+  &.projectScreenshot3 { background-image: url(./images/ScreenShotProject3.png) }
+  &.projectScreenshot4 { background-image: url(./images/ScreenShotProject4.png) }
+  &.projectScreenshot5 { background-image: url(./images/ScreenShotProject5.png) }
 }
 
 .projectText {
   color: white;
   pointer-events: none;
+  text-align: left;
 }
 
-.projectScreenshot1 {
-  background-image: url(./images/ScreenShotProject1.png);
-  width: 40%;
-  height: 400px;
-  background-size: cover;
-  border: 1px solid white;
-}
-.projectScreenshot2 {
-  background-image: url(./images/ScreenShotProject2.png);
-  width: 40%;
-  height: 400px;
-  background-size: cover;
-  border: 1px solid white;
-}
-.projectScreenshot3 {
-  background-image: url(./images/ScreenShotProject3.png);
-  width: 40%;
-  height: 400px;
-  background-size: cover;
-  border: 1px solid white;
-}
-.projectScreenshot4 {
-  background-image: url(./images/ScreenShotProject4.png);
-  width: 40%;
-  height: 400px;
-  background-size: cover;
-  border: 1px solid white;
-}
-.projectScreenshot5 {
-  background-image: url(./images/ScreenShotProject5.png);
-  width: 40%;
-  height: 400px;
-  background-size: cover;
-  border: 1px solid white;
-}
-.projectDetails2 {
-  display: none;
-}
-.projectDetails3 {
-  display: none;
-}
-.projectDetails4 {
-  display: none;
-}
-.projectDetails5 {
-  display: none;
-}
+
 
 .details {
   width: 50%;
   height: 400px;
   background-color: lightblue;
+}
+
+
+.mobileProject {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .projectContainer {
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 550px;
+    overflow: hidden;
+  }
+  .gap {
+    display: none;
+  }
+  .project {
+    width: 100%;
+    height: 100px;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+  .projectLogo {
+    margin-top: 10px;
+    height: 50px;
+    background-size: contain;
+  }
+  .projectDetails {
+    height: 200px;
+    margin-top: -50px;
+  }
+  .projectDetailsContainer {
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .projectTextContainer {
+    height: 300px;
+    width: 400px;
+  }
+  .projectScreenshot {
+    // width: 60%;
+    // height: 150px;
+    // background-position: center;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // border: 0px;
+    display: none;
+  }
 }

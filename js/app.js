@@ -61,9 +61,37 @@ $(() => {
   // }
 
 
-  let animationPlaying = false;
 
-  projects.on('mouseover', grow);
+
+  let animationPlaying = false;
+  const isMobile = window.matchMedia('(max-width: 700px)').matches;
+
+  if(isMobile) {
+    projects.on('click', mobileGrow);
+  } else {
+    projects.on('mouseover', grow);
+  }
+
+  function mobileGrow() {
+    const startHeight = $(this).height();
+    const id = $(this)[0].id;
+    resetMobile();
+    if(startHeight < 150) {
+      $(this).css('height', '700px');
+      setTimeout(() => {
+        $(`.projectDetails${id}`).fadeIn();
+      }, 2000);
+    }
+  }
+
+  function resetMobile() {
+    projects.css('height', '110px');
+    $('.projectDetails1').fadeOut();
+    $('.projectDetails2').fadeOut();
+    $('.projectDetails3').fadeOut();
+    $('.projectDetails4').fadeOut();
+    $('.projectDetails5').fadeOut();
+  }
 
 
   function grow() {
@@ -78,8 +106,9 @@ $(() => {
       gaps.last().css('flex-basis', '48%');
     }
     setTimeout(() => {
-      $(`.projectDetails${id}`).append(`<div class='projectText'>Project ${id} was great</div>
-      <div class='projectScreenshot${id}'></div>`);
+      // $(`.projectDetails${id}`).append(`<div class='projectText'>Project ${id} was great</div>
+      // <div class='projectScreenshot${id}'></div>`);
+      $(`.projectDetails${id}`).fadeIn();
       $(`#${id}`).on('mouseout', shrink);
       animationPlaying = false;
     }, 3000);
@@ -91,9 +120,7 @@ $(() => {
     animationPlaying = true;
     const id = $(this)[0].id;
     $(this).off('mouseout', shrink);
-    // $(`.projectDetails${id}`).fadeOut();
-    $('.projectText').remove();
-    $(`.projectScreenshot${id}`).remove();
+    $(`.projectDetails${id}`).fadeOut();
     $(`#${id}`).css('flex-basis', '15%');
     if(parseInt(id) < 3) {
       gaps.first().css('flex-basis', '1%');
