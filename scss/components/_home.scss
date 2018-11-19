@@ -1,0 +1,12 @@
+canvas {
+  position: absolute;
+}
+
+#header {
+  background-color: $backgroundColor;
+}
+
+.title {
+  z-index: 6;
+  position: absolute;
+}

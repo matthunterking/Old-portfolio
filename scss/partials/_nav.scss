@@ -1,0 +1,40 @@
+nav {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 6;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.selected {
+  background-color: $highlightColor;
+}
+
+.navItem {
+  width: 100px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.diamond {
+  width: 19px;
+  height: 19px;
+  transform: rotate(-315deg);
+  border: 0.25px solid $textColor;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}

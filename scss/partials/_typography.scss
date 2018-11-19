@@ -1,0 +1,21 @@
+.navItem {
+  font-family: $headerFont;
+  font-size: $navFontSize;
+  color: $textColor;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.standardText {
+  font-family: $standardFont;
+  font-size: $standardFontSize;
+}
+
+.sectionHeading {
+  font-family: $headerFont;
+  font-size: $titleFontSize;
+  color: $textColor;
+  letter-spacing: 0.63px;
+  text-align: center;
+  text-transform: uppercase;
+}

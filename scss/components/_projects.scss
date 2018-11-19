@@ -1,103 +1,3 @@
-body {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  flex-direction: column;
-  overflow-x: auto;
-  white-space: nowrap;
-  display: flex; }
-
-section {
-  min-width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; }
-
-.technologies {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 60%; }
-
-.technology {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: 25%; }
-
-i {
-  font-size: 40px; }
-
-nav {
-  height: 110px;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  left: 50px;
-  z-index: 6; }
-
-a {
-  text-decoration: none;
-  padding-left: 10px; }
-
-.selected {
-  background-color: #FF7D08; }
-
-.navItem {
-  width: 100px;
-  height: 40px;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start; }
-
-.diamond {
-  width: 19px;
-  height: 19px;
-  transform: rotate(-315deg);
-  border: 0.25px solid #353333; }
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue; } }
-.navItem {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 14px;
-  color: #353333;
-  letter-spacing: 0.54px;
-  text-transform: uppercase; }
-
-.standardText {
-  font-family: "Noto Serif", sans-serif;
-  font-size: 16px; }
-
-.sectionHeading {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 32px;
-  color: #353333;
-  letter-spacing: 0.63px;
-  text-align: center;
-  text-transform: uppercase; }
-
-canvas {
-  position: absolute; }
-
-#header {
-  background-color: #4AE1BA; }
-
-.title {
-  z-index: 6;
-  position: absolute; }
-
 .projectContainer {
   width: 80%;
   height: 600px;
@@ -105,7 +5,8 @@ canvas {
   overflow: auto;
   flex-wrap: nowrap;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .project {
   flex-basis: 15%;
@@ -117,28 +18,33 @@ canvas {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+}
 
 .projectDetails {
   background-color: white;
   width: 40%;
-  height: 300px; }
+  height: 300px;
+}
 
 .project1Pic {
-  background-image: url("codemon-Csmess-Front.png");
+  background-image: url('codemon-Csmess-Front.png');
   background-size: cover;
   background-color: transparent;
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
 .gap {
   flex-basis: 1%;
   flex-shrink: 0;
   height: 600px;
-  transition: all 3.5s; }
+  transition: all 3.5s;
+}
 
 .project1 {
-  background-Image: url(./images/Background_Codemon.png); }
+  background-Image: url(./images/Background_Codemon.png);
+}
 
 .project1Logo {
   background-Image: url(./images/Logo_codemon.png);
@@ -146,10 +52,12 @@ canvas {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 40px; }
+  margin-top: 40px;
+}
 
 .project2 {
-  background-Image: url(./images/Background_nibble.png); }
+  background-Image: url(./images/Background_nibble.png);
+}
 
 .project2Logo {
   background-Image: url(./images/Logo_Nibble.png);
@@ -157,10 +65,13 @@ canvas {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 40px; }
+  margin-top: 40px;
+}
+
 
 .project3 {
-  background-Image: url(./images/Background_neighbourgood.png); }
+  background-Image: url(./images/Background_neighbourgood.png);
+}
 
 .project3Logo {
   background-Image: url(./images/Logo_neighbourgood.png);
@@ -168,10 +79,12 @@ canvas {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 40px; }
+  margin-top: 40px;
+}
 
 .project4 {
-  background-Image: url(./images/Background_Love.png); }
+  background-Image: url(./images/Background_Love.png);
+}
 
 .project4Logo {
   background-Image: url(./images/Logo_Love.png);
@@ -179,10 +92,12 @@ canvas {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 40px; }
+  margin-top: 40px;
+}
 
 .project5 {
-  background-Image: url(./images/Background_nfl.png); }
+  background-Image: url(./images/Background_nfl.png);
+}
 
 .project5Logo {
   background-Image: url(./images/Logo_NFL.png);
@@ -190,14 +105,16 @@ canvas {
   height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 40px; }
-
+  margin-top: 40px;
+}
 .projectDetails1 {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
-  pointer-events: none; }
+  pointer-events: none;
+}
+
 
 .projectDetailsContainer1 {
   display: flex;
@@ -205,93 +122,92 @@ canvas {
   flex-direction: row;
   width: 100%;
   height: 400px;
-  pointer-events: none; }
-
+  pointer-events: none;
+}
 .projectDetailsContainer2 {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
-  height: 400px; }
-
+  height: 400px;
+}
 .projectDetailsContainer3 {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
-  height: 400px; }
-
+  height: 400px;
+}
 .projectDetailsContainer4 {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
-  height: 400px; }
-
+  height: 400px;
+}
 .projectDetailsContainer5 {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
-  height: 400px; }
+  height: 400px;
+}
 
 .projectText {
   color: white;
-  pointer-events: none; }
+  pointer-events: none;
+}
 
 .projectScreenshot1 {
   background-image: url(./images/ScreenShotProject1.png);
   width: 40%;
   height: 400px;
   background-size: cover;
-  border: 1px solid white; }
-
+  border: 1px solid white;
+}
 .projectScreenshot2 {
   background-image: url(./images/ScreenShotProject2.png);
   width: 40%;
   height: 400px;
   background-size: cover;
-  border: 1px solid white; }
-
+  border: 1px solid white;
+}
 .projectScreenshot3 {
   background-image: url(./images/ScreenShotProject3.png);
   width: 40%;
   height: 400px;
   background-size: cover;
-  border: 1px solid white; }
-
+  border: 1px solid white;
+}
 .projectScreenshot4 {
   background-image: url(./images/ScreenShotProject4.png);
   width: 40%;
   height: 400px;
   background-size: cover;
-  border: 1px solid white; }
-
+  border: 1px solid white;
+}
 .projectScreenshot5 {
   background-image: url(./images/ScreenShotProject5.png);
   width: 40%;
   height: 400px;
   background-size: cover;
-  border: 1px solid white; }
-
+  border: 1px solid white;
+}
 .projectDetails2 {
-  display: none; }
-
+  display: none;
+}
 .projectDetails3 {
-  display: none; }
-
+  display: none;
+}
 .projectDetails4 {
-  display: none; }
-
+  display: none;
+}
 .projectDetails5 {
-  display: none; }
+  display: none;
+}
 
 .details {
   width: 50%;
   height: 400px;
-  background-color: lightblue; }
-
-#about {
-  background-color: #4AE1BA; }
-
-/*# sourceMappingURL=style.css.map */
+  background-color: lightblue;
+}
