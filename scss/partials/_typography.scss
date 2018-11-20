@@ -37,3 +37,14 @@
   color: white;
   white-space: normal;
 }
+
+.contactText {
+  text-decoration: none;
+  font-size: $contactFontSize;
+  color: $textColor;
+  margin-left: 10px;
+}
+
+.contactText:hover {
+  color: $highlightColor;
+}

@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  width: 30%;
+  width: 25%;
 }
 
 .projectTechnology {
@@ -40,12 +40,30 @@
   margin-bottom: 3px;
 }
 
-// i {
-//   font-size: 40px;
-// }
+.aboutIcon {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.contactIcon {
+  font-size: 35px;
+  color: $textColor;
+  margin-right: 10px;
+}
 
 @media only screen and (max-width: 600px) {
   .projectTechnology {
     display: none
+  }
+  .aboutIcon {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .technologies {
+    width: 90%;
+  }
+  .technology {
+    width: 10%;
+    font-size: 10px;
   }
 }

@@ -39,7 +39,7 @@ section {
   justify-content: center;
   align-items: center;
   color: white;
-  width: 30%; }
+  width: 25%; }
 
 .projectTechnology {
   display: flex;
@@ -54,9 +54,29 @@ section {
   font-size: 30px;
   margin-bottom: 3px; }
 
+.aboutIcon {
+  font-size: 40px;
+  margin-bottom: 5px; }
+
+.contactIcon {
+  font-size: 35px;
+  color: #353333;
+  margin-right: 10px; }
+
 @media only screen and (max-width: 600px) {
   .projectTechnology {
-    display: none; } }
+    display: none; }
+
+  .aboutIcon {
+    font-size: 30px;
+    margin-bottom: 5px; }
+
+  .technologies {
+    width: 90%; }
+
+  .technology {
+    width: 10%;
+    font-size: 10px; } }
 nav {
   height: 110px;
   display: flex;
@@ -124,6 +144,15 @@ a {
   font-size: 14px;
   color: white;
   white-space: normal; }
+
+.contactText {
+  text-decoration: none;
+  font-size: 25px;
+  color: #353333;
+  margin-left: 10px; }
+
+.contactText:hover {
+  color: #FF7D08; }
 
 canvas {
   position: absolute; }
@@ -309,5 +338,18 @@ canvas {
     display: none; } }
 #about {
   background-color: #4AE1BA; }
+
+.aboutContainer {
+  width: 80%; }
+
+@media only screen and (max-width: 600px) {
+  .aboutContainer {
+    padding: 10px; } }
+.contactItem {
+  width: 20%;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
 
 /*# sourceMappingURL=style.css.map */
