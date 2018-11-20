@@ -17,9 +17,6 @@ section {
   align-items: center;
   text-align: center; }
 
-@media only screen and (max-width: 600px) {
-  canvas {
-    display: none; } }
 .technologies {
   display: flex;
   flex-direction: row;
@@ -138,6 +135,17 @@ canvas {
   z-index: 6;
   position: absolute; }
 
+@media only screen and (max-width: 600px) {
+  canvas {
+    display: none; }
+
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .title {
+    font-size: 20px; } }
 .projectContainer {
   width: 80%;
   min-height: 600px;
