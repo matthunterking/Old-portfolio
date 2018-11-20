@@ -108,7 +108,7 @@ $(() => {
     setTimeout(() => {
       // $(`.projectDetails${id}`).append(`<div class='projectText'>Project ${id} was great</div>
       // <div class='projectScreenshot${id}'></div>`);
-      $(`.projectDetails${id}`).fadeIn();
+      $(`.projectDetails${id}`).fadeIn(500);
       $(`#${id}`).on('mouseleave', shrink);
       animationPlaying = false;
     }, 3000);
@@ -131,7 +131,7 @@ $(() => {
     setTimeout(() => {
       projects.on('mouseover', grow);
       animationPlaying = false;
-    }, 3000);
+    }, 1000);
   }
 
   $('.hoverHighlight').on('mouseover', function() {
