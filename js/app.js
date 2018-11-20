@@ -109,11 +109,12 @@ $(() => {
       // $(`.projectDetails${id}`).append(`<div class='projectText'>Project ${id} was great</div>
       // <div class='projectScreenshot${id}'></div>`);
       $(`.projectDetails${id}`).fadeIn();
-      $(`#${id}`).on('mouseout', shrink);
+      $(`#${id}`).on('mouseleave', shrink);
       animationPlaying = false;
     }, 3000);
 
   }
+
 
   function shrink() {
     if(animationPlaying) return;
@@ -133,11 +134,11 @@ $(() => {
     }, 3000);
   }
 
-  $('.technology').on('mouseover', function() {
+  $('.hoverHighlight').on('mouseover', function() {
     $(this).css('color', '#FF7D08');
   });
 
-  $('.technology').on('mouseout', function() {
+  $('.hoverHighlight').on('mouseout', function() {
     $(this).css('color', 'white');
   });
 

@@ -7,15 +7,45 @@
   width: 60%;
 }
 
+.projectTechnologies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .technology {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  width: 25%;
+  width: 30%;
 }
 
-i {
-  font-size: 40px;
+.projectTechnology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 30%;
+  font-size: 14px;
+}
+
+.projectIcon {
+  font-size: 30px;
+  margin-bottom: 3px;
+}
+
+// i {
+//   font-size: 40px;
+// }
+
+@media only screen and (max-width: 600px) {
+  .projectTechnology {
+    display: none
+  }
 }

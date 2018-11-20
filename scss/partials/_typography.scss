@@ -9,6 +9,9 @@
 .standardText {
   font-family: $standardFont;
   font-size: $standardFontSize;
+  white-space: normal;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .sectionHeading {
@@ -24,10 +27,13 @@
   font-family: $standardFont;
   font-size: $subTitleSize;
   color: white;
+  white-space: normal;
+  margin-top: 0px;
 }
 
 .projectText {
   font-family: $standardFont;
   font-size: $projectFontSize;
   color: white;
+  white-space: normal;
 }
