@@ -527,6 +527,15 @@ a {
 .contactText:hover {
   color: #FF7D08; }
 
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 20px; }
+
+  .contactText {
+    font-size: 10px; }
+
+  .standardText {
+    font-size: 10px; } }
 canvas {
   position: absolute; }
 
@@ -544,10 +553,7 @@ canvas {
   #header {
     display: flex;
     justify-content: center;
-    align-items: center; }
-
-  .title {
-    font-size: 20px; } }
+    align-items: center; } }
 .projectContainer {
   width: 80%;
   min-height: 600px;
