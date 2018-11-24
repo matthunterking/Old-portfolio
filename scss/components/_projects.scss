@@ -11,7 +11,7 @@
   flex-basis: 15%;
   flex-shrink: 0;
   max-height: 600px;
-  transition: all 3s;
+  transition: all 2s;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -143,6 +143,9 @@
     height: 50px;
     background-size: contain;
   }
+  a .projectTechnology {
+      display: inline;
+    }
   .projectDetails {
     height: 200px;
     // margin-top: -50px;
