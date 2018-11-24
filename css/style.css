@@ -17,6 +17,9 @@ section {
   align-items: center;
   text-align: center; }
 
+@media only screen and (max-width: 600px) {
+  .hideMobile {
+    display: none; } }
 .technologies {
   display: flex;
   flex-direction: row;
