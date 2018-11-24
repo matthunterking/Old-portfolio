@@ -691,8 +691,18 @@ canvas {
     height: 50px;
     background-size: contain; }
 
-  a .projectTechnology {
-    display: inline; }
+  a.projectTechnology {
+    display: flex;
+    flex-direction: column; }
+
+  .projetScreenshotContainer {
+    display: flex;
+    width: 100%; }
+
+  .projectTechnologies {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
 
   .projectDetails {
     height: 200px; }
@@ -724,5 +734,15 @@ canvas {
   display: flex;
   flex-direction: row;
   justify-content: flex-start; }
+
+@media only screen and (max-width: 600px) {
+  #contact {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; }
+
+  .contactItem {
+    padding-left: 25px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -143,12 +143,21 @@
     height: 50px;
     background-size: contain;
   }
-  a .projectTechnology {
-      display: inline;
+  a.projectTechnology {
+    display: flex;
+    flex-direction: column;
     }
+  .projetScreenshotContainer {
+    display: flex;
+    width: 100%;
+  }
+  .projectTechnologies {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
   .projectDetails {
     height: 200px;
-    // margin-top: -50px;
   }
   .projectDetailsContainer {
     height: 400px;
@@ -161,12 +170,6 @@
     width: 80%;
   }
   .projectScreenshot {
-    // width: 60%;
-    // height: 150px;
-    // background-position: center;
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // border: 0px;
     display: none;
   }
 }
