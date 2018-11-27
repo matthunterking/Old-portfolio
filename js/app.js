@@ -1,4 +1,10 @@
 $(() => {
+  console.log('Thanks for checking out my website. If you would like to get in touch please contact me below');
+  console.table({
+    email: 'matthunterking@gmail.com',
+    linkedIn: 'linkedin.com/in/matthunterking',
+    github: 'github.com/matthunterking'
+  });
 
   const locations = [ '#header', '#projects', '#about', '#contact' ];
   let currentLocation = 0;
