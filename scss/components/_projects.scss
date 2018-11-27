@@ -11,7 +11,7 @@
   flex-basis: 15%;
   flex-shrink: 0;
   max-height: 600px;
-  transition: all 2s;
+  transition: all 1.5s;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -38,10 +38,11 @@
 
 .projectLogo {
   width: 150px;
-  height: 100px;
+  height: 60px;
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 40px;
+  margin-bottom: 10px;
   &.project1Logo { background-Image: url(./images/Logo_codemon.png) }
   &.project2Logo { background-Image: url(./images/Logo_Nibble.png) }
   &.project3Logo { background-Image: url(./images/Logo_neighbourgood.png) }

@@ -106,12 +106,10 @@ $(() => {
       gaps.last().css('flex-basis', '48%');
     }
     setTimeout(() => {
-      // $(`.projectDetails${id}`).append(`<div class='projectText'>Project ${id} was great</div>
-      // <div class='projectScreenshot${id}'></div>`);
       $(`.projectDetails${id}`).fadeIn(500);
       $(`#${id}`).on('mouseleave', shrink);
       animationPlaying = false;
-    }, 3000);
+    }, 2400);
 
   }
 
