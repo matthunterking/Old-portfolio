@@ -1,5 +1,5 @@
 $(() => {
-  console.log('Thanks for checking out my website. If you would like to get in touch please contact me below');
+  console.log('Thanks for checking out my website. If you would like to get in touch please contact me at matthunterking@gmail.com');
   console.table({
     email: 'matthunterking@gmail.com',
     linkedIn: 'linkedin.com/in/matthunterking',
