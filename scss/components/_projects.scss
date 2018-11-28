@@ -25,9 +25,7 @@
   &.project5 { background-Image: url(./images/Background_nfl.png) }
 }
 
-.hoverHighlight {
-  pointer-events: auto;
-}
+.hoverHighlight { pointer-events: auto }
 
 .gap {
   flex-basis: 1%;
@@ -130,9 +128,7 @@
     min-height: 550px;
     overflow: hidden;
   }
-  .gap {
-    display: none;
-  }
+  .gap { display: none }
   .project {
     width: 100%;
     height: 100px;
@@ -157,9 +153,7 @@
     display: flex;
     justify-content: space-around;
   }
-  .projectDetails {
-    height: 200px;
-  }
+  .projectDetails { height: 200px }
   .projectDetailsContainer {
     height: 400px;
     flex-direction: column;
@@ -170,7 +164,5 @@
     height: 300px;
     width: 80%;
   }
-  .projectScreenshot {
-    display: none;
-  }
+  .projectScreenshot { display: none }
 }

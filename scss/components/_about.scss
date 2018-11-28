@@ -1,13 +1,7 @@
-#about {
-  background-color: $backgroundColor;
-}
+#about { background-color: $backgroundColor }
 
-.aboutContainer {
-  width: 80%;
-}
+.aboutContainer { width: 80% }
 
 @media only screen and (max-width: 600px) {
-  .aboutContainer {
-    padding: 10px;
-  }
+  .aboutContainer { padding: 10px }
 }

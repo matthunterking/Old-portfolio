@@ -43,21 +43,11 @@
   margin-left: 10px;
 }
 
-.contactText:hover {
-  color: $highlightColor;
-}
+.contactText:hover { color: $highlightColor }
 
 @media only screen and (max-width: 600px) {
-  .title {
-    font-size: $titleFontSizeMobile;
-  }
-  .contactText {
-    font-size: $subTitleSizeMobile;
-  }
-  .standardText {
-    font-size: $standardFontSizeMobile;
-  }
-  .hideMobile {
-    display: none;
-  }
+  .title { font-size: $titleFontSizeMobile }
+  .contactText { font-size: $subTitleSizeMobile }
+  .standardText { font-size: $standardFontSizeMobile }
+  .hideMobile { display: none }
 }

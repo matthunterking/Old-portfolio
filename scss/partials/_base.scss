@@ -20,9 +20,7 @@ section {
 }
 
 @media only screen and (max-width: 600px) {
-  .hideMobile {
-    display: none;
-  }
+  .hideMobile { display: none }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px)

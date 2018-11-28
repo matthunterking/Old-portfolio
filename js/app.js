@@ -47,27 +47,8 @@ $(() => {
     }, 1200);
   }
 
-
-
-
-
   const projects = $('.project');
   const gaps = $('.gap');
-
-  // function hover() {
-  //   projects.off('mouseover', hover);
-  //   console.log(projects, 'dont have hover');
-  //   console.log('hover', $(this)[0].id);
-  //   grow($(this)[0].id);
-  // }
-  //
-  // function mouseout() {
-  //   console.log('mouseOut', $(this));
-  //   shrink($(this)[0].id);
-  // }
-
-
-
 
   let animationPlaying = false;
   const isMobile = window.matchMedia('(max-width: 700px)').matches;
@@ -99,7 +80,6 @@ $(() => {
     $('.projectDetails5').fadeOut();
   }
 
-
   function grow() {
     if(animationPlaying) return;
     projects.off('mouseover', grow);
@@ -118,7 +98,6 @@ $(() => {
     }, 2400);
 
   }
-
 
   function shrink() {
     if(animationPlaying) return;
