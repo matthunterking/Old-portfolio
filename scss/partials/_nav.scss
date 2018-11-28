@@ -11,6 +11,7 @@ nav {
 a {
   text-decoration: none;
   padding-left: 10px;
+  color: $textColor;
 }
 
 .selected { background-color: $highlightColor }

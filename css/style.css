@@ -472,7 +472,8 @@ nav {
 
 a {
   text-decoration: none;
-  padding-left: 10px; }
+  padding-left: 10px;
+  color: #353333; }
 
 .selected {
   background-color: #FF7D08; }
