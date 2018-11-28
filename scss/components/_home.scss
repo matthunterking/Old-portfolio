@@ -7,7 +7,7 @@ canvas { position: absolute }
   position: absolute;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px), screen and (max-height: 400px) {
   canvas { display: none }
   #header {
     display: flex;
