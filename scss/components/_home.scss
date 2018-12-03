@@ -5,6 +5,18 @@ canvas { position: absolute }
 .title {
   z-index: 6;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mattLogo {
+  background-image: url(./images/Mattlogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 100px;
+  min-height: 50px;
 }
 
 @media only screen and (max-width: 600px), screen and (max-height: 400px) {

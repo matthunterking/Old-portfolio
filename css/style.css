@@ -553,7 +553,18 @@ canvas {
 
 .title {
   z-index: 6;
-  position: absolute; }
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.mattLogo {
+  background-image: url(./images/Mattlogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 100px;
+  min-height: 50px; }
 
 @media only screen and (max-width: 600px), screen and (max-height: 400px) {
   canvas {
@@ -701,7 +712,7 @@ canvas {
 
   .project {
     width: 100%;
-    height: 100vh;
+    height: 100px;
     flex-shrink: 1;
     flex-basis: auto; }
 
