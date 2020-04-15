@@ -45,6 +45,15 @@
 
 .contactText:hover { color: $highlightColor }
 
+.dealOrNoDealText {
+  color: white;
+  font-family: $headerFont;
+  font-size: $subTitleSize;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+
 @media only screen and (max-width: 600px), screen and (max-height: 400px) {
   .title { font-size: $titleFontSizeMobile }
   .contactText { font-size: $subTitleSizeMobile }

@@ -1,395 +1,162 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matt Hunter-King</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/canvas.js" charset="utf-8"></script>
-    <script src="js/app.js" charset="utf-8"></script>
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Serif|Lobster|Kaushan+Script|Anton" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel='icon' href='./css/favicon.ico'>
-  </head>
-  <body>
-    <section id="header">
-      <nav>
-        <div class='navItem'>
-          <div class='header selected diamond'></div>
-          <a href='#header'>Home</a>
-        </div>
-        <div class='navItem'>
-          <div class='projects diamond'></div>
-          <a href='#projects'>Projects</a>
-        </div>
-        <div class='navItem'>
-          <div class='about diamond'></div>
-          <a href='#about'>About</a>
-        </div>
-        <div class='navItem'>
-          <div class='contact diamond'></div>
-          <a href='#contact'>Contact</a>
-        </div>
-      </nav>
-      <canvas></canvas>
-      <div class="title">
-        <div class='mattLogo'></div>
-        <h1 class="sectionHeading">Matt Hunter-King</h1>
-        <p class="standardText">Web developer and former event manager,<br /> looking for a junior developer role.</p>
-        <p class="standardText">Welcome to my website, I made this!</p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matt Hunter-King</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/canvas.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Serif|Lobster|Kaushan+Script|Anton"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel='icon' href='./css/favicon.ico'>
+</head>
+
+<body>
+  <section id="header">
+    <canvas></canvas>
+    <div class="title">
+      <div class='mattLogo'></div>
+      <h1 class="sectionHeading">Matt Hunter-King</h1>
+      <p class="standardText">I was an event manager<br />Now I'm a full stack developer for mobile and web</p>
       <div>
-    </section>
-    <section id="projects">
-      <h2 class='sectionHeading'>Projects</h2>
-      <div class='projectContainer'>
-        <div class='gap'></div>
-        <div class='project project1' id='1'>
-          <div class='projectLogo project1Logo'></div>
-          <div class='projectDetails projectDetails1'>
-            <div class='projectDetailsContainer'>
-              <div class='projectTextContainer'>
-                <h3 class='projectTitle'>Codémon</h3>
-                <p class='projectText'>Individual Project - 1 week</p>
-                <p class='projectText'>A reimagined version of the 1996 Gameboy
-                  classic Pokémon with the twist of swapping out the Pokémon and
-                  replacing them with coding languages.</p>
-                  <p class="projectText hideMobile">
-                  This project was a lot of fun and after I made the basic
-                    version of the game really enjoyed adding additional features,
-                    complexity and styling to the game. Although looking back now
-                    there are lots of changes, I would make I’m really pleased
-                    with the finished product and am very proud that I managed to
-                    produce it so early in the course.
-                  </p>
-                </div>
-                <div class='projetScreenshotContainer'>
-                  <div class='projectScreenshot projectScreenshot1'></div>
-                  <div class="projectTechnologies">
-                    <a class='projectTechnology hoverHighlight' href="https://github.com/matthunterking/WDI-Project1" target="_blank">
-                      <i class="fab fa-github projectIcon"></i>
-                      View repository
-                    </a>
-                    <a class='projectTechnology hoverHighlight' href='http://matthunterking.com/WDI-Project1/' target="_blank">
-                      <i class="fas fa-globe-africa projectIcon"></i>
-                      View site
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class='projectTechnologies'>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-html5 projectIcon"></i>
-                  HTML5</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-sass projectIcon"></i>
-                  Sass</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-css3 projectIcon"></i>
-                  CSS Animation</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-js projectIcon"></i>
-                  JavaScript (ES6)</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-jquery projectIcon"></i>
-                  jQuery</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="fab fa-github-alt projectIcon"></i>
-                  GitHub</p>
-                </div>
-          </div>
+  </section>
+  <section id="professional">
+    <h2 class='sectionHeading'>Professional Career</h2>
+    <div class='careerList'>
+      <div class='careerItem eurostarBackgroundColor'>
+        <img src='./css/images/eurostar.png' class="companyLogo eurostarLogo">
+        <div>
+          <p class='standardText' style='color:white'>August 2019 - Present</p>
+          <p class='standardText' style='color:white'>Graduate Developer</p>
+          <p class='standardText' style='color:white'><i class="fas fa-mobile-alt"></i> Mobile</p>
         </div>
-        <div class='gap'></div>
-        <div class='project project2' id='2'>
-          <div class='projectLogo project2Logo'></div>
-          <div class='projectDetails projectDetails2'>
-            <div class='projectDetailsContainer'>
-              <div class='projectTextContainer'>
-                <h3 class='projectTitle'>Nibble</h3>
-                <p class='projectText'>Individual Project - 1 week</p>
-                <p class='projectText'>Nibble is a full stack restaurant review
-                  site built using Node.js and EJS. Users can add, review and
-                  comment on restaurants. I also included up and down votes and
-                  a user profile page where users can manage their account and
-                  reviews.
-                </p>
-                  <p class="projectText hideMobile">This project was very challenging for me and I had to restart
-                  early on after a number of setbacks. However once I’d got back
-                  on track I was really pleased that I managed to make a
-                  functioning site and had time to include many of the
-                  additional features that I had planned.
-                  Although not my favourite project this was my first experience
-                  of building a website with both a front-end and backend and
-                  provided the foundation for future projects.</p>
-                </div>
-                <div class='projetScreenshotContainer'>
-                  <div class='projectScreenshot projectScreenshot2'></div>
-                  <div class="projectTechnologies">
-                    <a class='projectTechnology hoverHighlight' href="https://github.com/matthunterking/WDI-Project2" target="_blank">
-                      <i class="fab fa-github projectIcon"></i>
-                      View repository
-                    </a>
-                    <a class='projectTechnology hoverHighlight' href='https://wdi-nibble.herokuapp.com/' target="_blank">
-                      <i class="fas fa-globe-africa projectIcon"></i>
-                      View site
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class='projectTechnologies'>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-nodejs projectIcon"></i>
-                  Node.js</p>
-                  <p class="projectTechnology hoverHighlight">
-                    <i class="icon-mongodb projectIcon"></i>
-                    MongoDB</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-nodejs projectIcon"></i>
-                  Express</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-css3 projectIcon"></i>
-                  Materialize</p>
-                  <p class="projectTechnology hoverHighlight">
-                    <i class="icon-nodejs projectIcon"></i>
-                    EJS</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="fab fa-github-alt projectIcon"></i>
-                  GitHub</p>
-                </div>
-          </div>
-        </div>
-        <div class='gap'></div>
-        <div class='project project3' id='3'>
-          <div class='projectLogo project3Logo'></div>
-          <div class='projectDetails projectDetails3'>
-            <div class='projectDetails projectDetailsContainer3'>
-              <div class='projectDetailsContainer'>
-                <div class='projectTextContainer'>
-                  <h3 class='projectTitle'>NeighbourGood</h3>
-                  <p class='projectText'>Group Project - 1 week</p>
-                  <p class='projectText'>A job board where users can volunteer
-                    to help other people from their community with day to day
-                    tasks. Users can filter jobs by location and manage
-                    applicants for their posted jobs.
-                  </p>
-                  <p class="projectText hideMobile">
-                    I worked primarily on the map elements, styling and
-                    automated testing.
-                    Creating the functionality for the distance filtering was a
-                    challenge and involved reading a lot of documentation,
-                    however I was really pleased that I managed to include the
-                    feature as it really adds to the site.
-                  </p>
-                  </div>
-                  <div class='projetScreenshotContainer'>
-                    <div class='projectScreenshot projectScreenshot3'></div>
-                    <div class="projectTechnologies">
-                      <a class='projectTechnology hoverHighlight' href="https://github.com/matthunterking/WDI_PROJECT_3" target="_blank">
-                        <i class="fab fa-github projectIcon"></i>
-                        View repository
-                      </a>
-                      <a class='projectTechnology hoverHighlight' href='https://neighbour-good.herokuapp.com' target="_blank">
-                        <i class="fas fa-globe-africa projectIcon"></i>
-                        View site
-                      </a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class='projectTechnologies'>
-              <p class="projectTechnology hoverHighlight">
-                <i class="icon-angular projectIcon"></i>
-                Angular</p>
-              <p class="projectTechnology hoverHighlight">
-                <i class="fab fa-google projectIcon"></i>
-                Google Maps API</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-nodejs projectIcon"></i>
-                  Express</p>
-                  <p class="projectTechnology hoverHighlight">
-                    <i class="icon-mongodb projectIcon"></i>
-                    MongoDB</p>
-              <p class="projectTechnology hoverHighlight">
-                <i class="fas fa-coffee projectIcon"></i>
-                Mocha and Chai</p>
-              <p class="projectTechnology hoverHighlight">
-                <i class="fas fa-user-secret projectIcon"></i>
-                Oauth</p>
-              </div>
-          </div>
-        </div>
-        <div class='gap'></div>
-        <div class='project project4' id='4'>
-          <div class='projectLogo project4Logo'></div>
-          <div class='projectDetails projectDetails4'>
-            <div class='projectDetails projectDetailsContainer4'>
-              <div class='projectDetailsContainer'>
-                <div class='projectTextContainer'>
-                  <h3 class='projectTitle'>Destination Love</h3>
-                  <p class='projectText'>Group Project - 1 week</p>
-                  <p class='projectText'>
-                    Destination Love is a dating site which solves the dilemma
-                    of deciding where you and a potential partner can go on your
-                     first date. The app allows users to manage match requests,
-                     profiles and messages. Date suggestions are within a 1km
-                     radius of the geographical center between both users.
-                   </p>
-                    <p class="projectText hideMobile">I primarily worked on the
-                    user registration process, match
-                    request handling, messaging and the styling of the site.
-                    Initially I’d planned to use a third party package to manage
-                    sending and accepting matches however after running into
-                    difficulties decided it would be more fun and challenging
-                    to create my own system to manage theses requests.
-                  </p>
-                  </div>
-                  <div class='projetScreenshotContainer'>
-                    <div class='projectScreenshot projectScreenshot4'></div>
-                    <div class="projectTechnologies">
-                      <a class='projectTechnology hoverHighlight' href="https://github.com/matthunterking/WDI-Project4" target="_blank">
-                        <i class="fab fa-github projectIcon"></i>
-                        View repository
-                      </a>
-                      <a class='projectTechnology hoverHighlight' href='https://destination-love.herokuapp.com/' target="_blank">
-                        <i class="fas fa-globe-africa projectIcon"></i>
-                        View site
-                      </a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class='projectTechnologies'>
-              <p class="projectTechnology hoverHighlight">
-                <i class="icon-react projectIcon"></i>
-                React</p>
-              <p class="projectTechnology hoverHighlight">
-                <i class="fab fa-google projectIcon"></i>
-                Google Maps API</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-nodejs projectIcon"></i>
-                  Express</p>
-                  <p class="projectTechnology hoverHighlight">
-                    <i class="icon-mongodb projectIcon"></i>
-                    MongoDB</p>
-              <p class="projectTechnology hoverHighlight">
-                <i class="fas fa-coffee projectIcon"></i>
-                Mocha and Chai</p>
-              <p class="projectTechnology hoverHighlight">
-                <i class="fab fa-github-alt projectIcon"></i>
-                GitHub</p>
-              </div>
-          </div>
-        </div>
-        <div class='gap'></div>
-        <div class='project project5' id='5'>
-          <div class='projectLogo project5Logo'></div>
-          <div class='projectDetails projectDetails5'>
-            <div class='projectDetails projectDetailsContainer5'>
-              <div class='projectDetailsContainer'>
-                <div class='projectTextContainer'>
-                  <h3 class='projectTitle'>NFL Picks</h3>
-                  <p class='projectText'>Individual Project - 3 months</p>
-                  <p class='projectText'>I made this site in collaboration with
-                    my wife who is a graphic designer. We are both fans of
-                    American Football and for the past few years have been
-                    competing against each other predicting the results of NFL
-                    games. <span class="projectText hideMobile">We used to use an Excel spreadsheet for this but
-                    after I’d learnt to code decided to replace it with this site.</span>
-                  </p>
-                </div>
-                  <div class='projetScreenshotContainer'>
-                    <div class='projectScreenshot projectScreenshot5'></div>
-                    <div class="projectTechnologies">
-                      <a class='projectTechnology hoverHighlight' href="https://github.com/matthunterking/nflpicks" target="_blank">
-                        <i class="fab fa-github projectIcon"></i>
-                        View repository
-                      </a>
-                      <a class='projectTechnology hoverHighlight' href='https://nfl-picks-game.herokuapp.com/' target="_blank">
-                        <i class="fas fa-globe-africa projectIcon"></i>
-                        View site
-                      </a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class='projectTechnologies'>
-              <p class="projectTechnology hoverHighlight">
-                <i class="icon-react projectIcon"></i>
-                React</p>
-                <p class="projectTechnology hoverHighlight">
-                  <i class="icon-nodejs projectIcon"></i>
-                  Express</p>
-                  <p class="projectTechnology hoverHighlight">
-                    <i class="icon-mongodb projectIcon"></i>
-                    MongoDB</p>
-                    <p class="projectTechnology hoverHighlight">
-                      <i class="fas fa-coffee projectIcon"></i>
-                      Mocha and Chai</p>
-                      <p class="projectTechnology hoverHighlight">
-                        <i class="icon-webpack projectIcon"></i>
-                        Webpack</p>
-                      <p class="projectTechnology hoverHighlight">
-                        <i class="fab fa-github-alt projectIcon"></i>
-                        GitHub</p>
-                      </div>
-          </div>
-        </div>
-        <div class='gap'></div>
       </div>
-    </section>
-    <section id="about">
-      <h2 class='sectionHeading'>About</h2>
-      <article class='aboutContainer'>
-        <p class='standardText'>
-          At the start of 2018 I decided that I needed to change careers and
-          having had a professional life of always being the only person in
-          the office who knew how to work Microsoft Excel, decided that web
-          development would be a good avenue to explore.
-        </p>
-         <p class='standardText hideMobile'>
-           After a couple of online courses I was hooked and decided to take a
-           three month immersive course at General Assembly.
+      <div class='careerItem bwBackgroundColor'>
+        <img src='./css/images/BW-logo.jpeg' class="companyLogo">
+        <div>
+          <p class='standardText' style='color:white'>January 2019 <br />- July 2019</p>
+          <p class='standardText' style='color:white'>Developer</p>
+          <p class='standardText' style='color:white'><i class="fas fa-desktop"></i> Web</p>
+        </div>
+      </div>
+      <div class='careerItem gaBackgoundColor'>
+        <img src='./css/images/GA-logo.png' class="companyLogo">
+        <div>
+          <p class='standardText' style='color:white'>June 2018 <br />- December 2018</p>
+          <p class='standardText' style='color:white'>Teaching Assistant</p>
+          <p class='standardText' style='color:white'><i class="fas fa-desktop"></i> Web</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <h2 class='sectionHeading'>Projects</h2>
+    <div class='projectList'>
+      <div class='projectOuterContainer'>
+        <div class="project nflPicksBackground">
+          <div class='projectLogo nflPicksLogo'></div>
+          <a class='projectTechnology hoverHighlight' href="https://github.com/matthunterking/nflpicks" target="_blank">
+            <i class="fab fa-github projectIcon"></i>
+          </a>
+        </div>
+        <div class="projectInfoContainer">
+          <div class='deviceContainer'>
+            <p class='standardText'><i class="fas fa-desktop"></i> Web </p>
+            <p class='standardText'><i class="fas fa-mobile-alt"></i> Mobile</p>
+          </div>
+          <div>
+            <p class='standardText' style='padding:0; margin: 0;'>V1 - August 2018</p>
+            <p class='standardText' style='padding:0; margin: 0;'>V2 - August 2019</p>
+            <p class='standardText' style='padding:0; margin: 0;'>V3 - March 2020</p>
+          </div>
+        </div>
+      </div>
+      <div class='projectOuterContainer'>
+        <div class="project dealOrNoDealBackground">
+          <p class='dealOrNoDealText'>DEAL OR NO DEAL</p>
+          <a class='projectTechnology hoverHighlight' href="https://github.com/matthunterking/dealOrNoDeal"
+            target="_blank">
+            <i class="fab fa-github projectIcon"></i>
+          </a>
+        </div>
+        <div class="projectInfoContainer">
+          <div class='deviceContainer'>
+            <p class=><i class="fas fa-mobile-alt"></i> Mobile</p>
+          </div>
+          <p class='standardText'>April 2020</p>
+        </div>
+      </div>
+      <div class='projectOuterContainer'>
+        <div class="project codemonBackground">
+          <div class='projectLogo project1Logo'></div>
+          <a class='projectTechnology hoverHighlight' href="https://github.com/matthunterking/WDI-Project1"
+            target="_blank">
+            <i class="fab fa-github projectIcon"></i>
+          </a>
+          <a class='projectTechnology hoverHighlight' href='http://matthunterking.com/WDI-Project1/' target="_blank">
+            <i class="fas fa-globe-africa projectIcon"></i>
+          </a>
+        </div>
+        <div class="projectInfoContainer">
+          <div class='deviceContainer'>
+            <p class=><i class="fas fa-desktop"></i> Web </p>
+          </div>
+          <p class=>April 2018</p>
+        </div>
+      </div>
+    </div>
 
-         </p>
-         <p class='standardText hideMobile'>
-           Following my completion of the course I was asked to become part of
-           the instructional team for the next two groups of students. This gave
-           me the opportunity to solidify my coding knowledge as well as help
-           and coach new students.
-
-         </p>
-         <p class='standardText'>
-           Web development provides me with fresh and exciting challenges
-           everyday and I love pushing myself to solve problems and learn
-           new skills.
-        </p>
+  </section>
+  <section id="about">
+    <h2 class='sectionHeading'>About</h2>
+    <article class='aboutContainer'>
+      <p class='standardText'>
+        At the start of 2018 I decided to quit my job in event management and decided start
+        a career in web development. After taking some online courses I took a three month immersive course
+        at General Assembly.
+      </p>
+      <p class='standardText hideMobile'>
+        Now work in the Mobile team at Eurostar, maintaining and improving the mobile app.
+      </p>
     </article>
     <p class='standardText'>Some of the technologies I have used</p>
     <div class='technologies'>
       <p class="technology hoverHighlight"><i class="icon-html5 aboutIcon"></i><span class="hideMobile">HTML5</span></p>
       <p class="technology hoverHighlight"><i class="icon-sass aboutIcon"></i><span class="hideMobile">Sass</span></p>
-      <p class="technology hoverHighlight"><i class="icon-js aboutIcon"></i><span class="hideMobile">JavaScript (ES6)</span></p>
-      <p class="technology hoverHighlight"><i class="icon-react aboutIcon"></i><span class="hideMobile">React</span></p>
-      <p class="technology hoverHighlight"><i class="icon-angular aboutIcon"></i><span class="hideMobile">Angular</span></p>
-      <p class="technology hoverHighlight"><i class="icon-nodejs aboutIcon"></i><span class="hideMobile">Node.js</span></p>
-      <p class="technology hoverHighlight"><i class="fab fa-vuejs aboutIcon"></i><span class="hideMobile">Vue.js</span></p>
-      <p class="technology hoverHighlight"><i class="icon-mongodb aboutIcon"></i><span class="hideMobile">MongoDB</span></p>
+      <p class="technology hoverHighlight"><i class="icon-js aboutIcon"></i><span class="hideMobile">JavaScript
+          (ES6)</span></p>
+      <p class="technology hoverHighlight"><i class="icon-react aboutIcon"></i><span class="hideMobile">React and React
+          Native</span></p>
+      <p class="technology hoverHighlight"><i class="icon-angular aboutIcon"></i><span class="hideMobile">Angular</span>
+      </p>
+      <p class="technology hoverHighlight"><i class="icon-nodejs aboutIcon"></i><span class="hideMobile">Node.js</span>
+      </p>
+      <p class="technology hoverHighlight"><i class="fab fa-vuejs aboutIcon"></i><span class="hideMobile">Vue.js</span>
+      </p>
+      <p class="technology hoverHighlight"><i class="icon-mongodb aboutIcon"></i><span class="hideMobile">MongoDB</span>
+      </p>
     </div>
-    </section>
-    <section id="contact">
-      <h2 class='sectionHeading'>Contact</h2>
-        <a class='contactItem' href='mailto:matthunterking@gmail.com?subject=Hi Matt'>
-          <i class="far fa-envelope contactIcon"></i>
-          <div class='contactText'>matthunterking@gmail.com</div>
-        </a>
-        <a class='contactItem' href='www.linkedin.com/in/matthunterking' target="_blank">
-          <i class="fab fa-linkedin contactIcon"></i>
-          <div class='contactText'>linkedin.com/in/matthunterking</div>
-        </a>
-        <a class='contactItem' href='www.github.com/matthunterking' target="_blank">
-          <i class="fab fa-github-alt contactIcon"></i>
-          <div class='contactText'>github.com/matthunterking</div>
-        </a>
-    </section>
-  </body>
+  </section>
+  <section id="contact">
+    <h2 class='sectionHeading'>Contact</h2>
+    <a class='contactItem' href='mailto:matthunterking@gmail.com?subject=Hi Matt'>
+      <i class="far fa-envelope contactIcon"></i>
+      <div class='contactText'>matthunterking@gmail.com</div>
+    </a>
+    <a class='contactItem' href='www.linkedin.com/in/matthunterking' target="_blank">
+      <i class="fab fa-linkedin contactIcon"></i>
+      <div class='contactText'>linkedin.com/in/matthunterking</div>
+    </a>
+    <a class='contactItem' href='www.github.com/matthunterking' target="_blank">
+      <i class="fab fa-github-alt contactIcon"></i>
+      <div class='contactText'>github.com/matthunterking</div>
+    </a>
+  </section>
+</body>
+
 </html>

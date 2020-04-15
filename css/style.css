@@ -46,7 +46,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #353333;
   width: 25%; }
 
 .projectTechnology {
@@ -71,10 +71,10 @@ section {
   color: #353333;
   margin-right: 10px; }
 
-@media only screen and (max-width: 600px) {
-  .projectTechnology {
-    display: none; }
+.hoverHighlight:hover {
+  color: #FF7D08; }
 
+@media only screen and (max-width: 600px) {
   .aboutIcon {
     font-size: 30px;
     margin-bottom: 5px; }
@@ -533,6 +533,13 @@ a {
 .contactText:hover {
   color: #FF7D08; }
 
+.dealOrNoDealText {
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 1rem; }
+
 @media only screen and (max-width: 600px), screen and (max-height: 400px) {
   .title {
     font-size: 20px; }
@@ -574,6 +581,9 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center; } }
+#projects {
+  background-color: #4AE1BA; }
+
 .projectContainer {
   width: 80%;
   min-height: 600px;
@@ -582,175 +592,85 @@ canvas {
   display: flex;
   justify-content: center; }
 
-.project {
-  flex-basis: 15%;
-  flex-shrink: 0;
-  max-height: 600px;
-  transition: all 1.5s;
-  background-size: cover;
-  background-position: center;
+.projectList {
+  height: 80%;
+  width: 80%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); }
+
+.projectOuterContainer {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
-  align-items: center; }
-  .project.project1 {
-    background-Image: url(./images/Background_Codemon.png); }
-  .project.project2 {
-    background-Image: url(./images/Background_nibble.png); }
-  .project.project3 {
-    background-Image: url(./images/Background_neighbourgood.png); }
-  .project.project4 {
-    background-Image: url(./images/Background_Love.png); }
-  .project.project5 {
-    background-Image: url(./images/Background_nfl.png); }
+  background-color: white;
+  margin-top: 10px; }
 
-.hoverHighlight {
-  pointer-events: auto; }
+.project {
+  display: grid;
+  grid-template-columns: 1fr 40px 40px;
+  align-items: center;
+  background-size: cover;
+  height: 100%; }
 
-.gap {
-  flex-basis: 1%;
-  flex-shrink: 0;
-  height: 600px;
-  transition: all 3.5s; }
+.nflPicksBackground {
+  background-image: url(./images/Background_nfl.png);
+  background-position: 0 45%; }
+
+.dealOrNoDealBackground {
+  background-Image: url(./images/backgroundDealOrNoDeal.png);
+  background-position: 0 45%; }
+
+.codemonBackground {
+  background-image: url(./images/Background_Codemon.png);
+  background-position: bottom; }
 
 .projectLogo {
-  width: 150px;
-  height: 60px;
+  width: 60%;
+  height: 60%;
   background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 40px;
-  margin-bottom: 10px; }
+  background-repeat: no-repeat; }
   .projectLogo.project1Logo {
     background-Image: url(./images/Logo_codemon.png); }
-  .projectLogo.project2Logo {
-    background-Image: url(./images/Logo_Nibble.png); }
-  .projectLogo.project3Logo {
-    background-Image: url(./images/Logo_neighbourgood.png); }
-  .projectLogo.project4Logo {
-    background-Image: url(./images/Logo_Love.png); }
-  .projectLogo.project5Logo {
+  .projectLogo.nflPicksLogo {
     background-Image: url(./images/Logo_NFL.png); }
 
-.projectDetails {
-  pointer-events: none;
-  width: 100%;
-  height: 400px; }
-  .projectDetails.projectDetails1 {
-    display: none; }
-  .projectDetails.projectDetails2 {
-    display: none; }
-  .projectDetails.projectDetails3 {
-    display: none; }
-  .projectDetails.projectDetails4 {
-    display: none; }
-  .projectDetails.projectDetails5 {
-    display: none; }
+.projectInfoContainer {
+  height: 32%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
 
-.projectDetailsContainer {
+.deviceContainer {
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
-  height: 400px;
-  width: 100%; }
+  justify-content: space-around; }
 
-.projectTextContainer {
-  width: 40%;
-  height: 400px;
-  text-align: left; }
+.careerList {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  height: 60%;
+  width: 80%; }
 
-.projetScreenshotContainer {
-  width: 45%;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+.careerItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100%; }
 
-.projectScreenshot {
-  width: 100%;
-  height: 250px;
-  border: 1px solid white;
-  background-size: cover; }
-  .projectScreenshot.projectScreenshot1 {
-    background-image: url(./images/ScreenShotProject1.png); }
-  .projectScreenshot.projectScreenshot2 {
-    background-image: url(./images/ScreenShotProject2.png); }
-  .projectScreenshot.projectScreenshot3 {
-    background-image: url(./images/ScreenShotProject3.png); }
-  .projectScreenshot.projectScreenshot4 {
-    background-image: url(./images/ScreenShotProject4.png); }
-  .projectScreenshot.projectScreenshot5 {
-    background-image: url(./images/ScreenShotProject5.png); }
+.eurostarBackgroundColor {
+  background-color: #17224a; }
 
-.projectText {
-  color: white;
-  pointer-events: none;
-  text-align: left; }
+.bwBackgroundColor {
+  background-color: #333748; }
 
-.details {
-  width: 50%;
-  height: 400px;
-  background-color: lightblue; }
+.gaBackgoundColor {
+  background-color: red; }
 
-.mobileProject {
-  width: 100%;
-  min-height: 100px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center; }
+.companyLogo {
+  height: 100%;
+  padding-left: 20%; }
 
-@media only screen and (max-width: 600px), screen and (max-height: 400px) {
-  .projectContainer {
-    justify-content: space-between;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow: hidden; }
-
-  .gap {
-    display: none; }
-
-  .project {
-    width: 100%;
-    height: 100px;
-    flex-shrink: 1;
-    flex-basis: auto; }
-
-  .projectLogo {
-    margin-top: 10px;
-    height: 50px;
-    background-size: contain; }
-
-  a.projectTechnology {
-    display: flex;
-    flex-direction: column; }
-
-  .projetScreenshotContainer {
-    display: flex;
-    width: 100%; }
-
-  .projectTechnologies {
-    width: 100%;
-    display: flex;
-    justify-content: space-around; }
-
-  .projectDetails {
-    height: 200px; }
-
-  .projectDetailsContainer {
-    height: 400px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-
-  .projectTextContainer {
-    height: 300px;
-    width: 80%; }
-
-  .projectScreenshot {
-    display: none; } }
-#about {
-  background-color: #4AE1BA; }
+.eurostarLogo {
+  height: auto;
+  width: 60%; }
 
 .aboutContainer {
   width: 80%; }
@@ -758,6 +678,9 @@ canvas {
 @media only screen and (max-width: 600px), screen and (max-height: 400px) {
   .aboutContainer {
     padding: 10px; } }
+#contact {
+  background-color: #4AE1BA; }
+
 .contactItem {
   width: 20%;
   min-height: 50px;

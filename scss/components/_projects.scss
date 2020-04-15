@@ -1,3 +1,5 @@
+#projects { background-color: $backgroundColor }
+
 .projectContainer {
   width: 80%;
   min-height: 600px;
@@ -7,162 +9,60 @@
   justify-content: center;
 }
 
-.project {
-  flex-basis: 15%;
-  flex-shrink: 0;
-  max-height: 600px;
-  transition: all 1.5s;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  &.project1 { background-Image: url(./images/Background_Codemon.png) }
-  &.project2 { background-Image: url(./images/Background_nibble.png) }
-  &.project3 { background-Image: url(./images/Background_neighbourgood.png) }
-  &.project4 { background-Image: url(./images/Background_Love.png) }
-  &.project5 { background-Image: url(./images/Background_nfl.png) }
+.projectList {
+  height: 80%;
+  width: 80%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
 }
 
-.hoverHighlight { pointer-events: auto }
+.projectOuterContainer {
+  display: flex;
+  flex-direction: column; 
+  background-color: white;
+  margin-top: 10px;
+}
 
-.gap {
-  flex-basis: 1%;
-  flex-shrink: 0;
-  height: 600px;
-  transition: all 3.5s;
+.project {
+  display: grid;
+  grid-template-columns: 1fr 40px 40px;
+  align-items: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.nflPicksBackground {
+  background-image: url(./images/Background_nfl.png);
+  background-position: 0 45%;
+}
+
+.dealOrNoDealBackground { 
+  background-Image: url(./images/backgroundDealOrNoDeal.png);
+  background-position: 0 45%;
+}
+
+.codemonBackground {
+  background-image: url(./images/Background_Codemon.png);
+  background-position: bottom;
 }
 
 .projectLogo {
-  width: 150px;
-  height: 60px;
+  width: 60%;
+  height: 60%;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 40px;
-  margin-bottom: 10px;
   &.project1Logo { background-Image: url(./images/Logo_codemon.png) }
-  &.project2Logo { background-Image: url(./images/Logo_Nibble.png) }
-  &.project3Logo { background-Image: url(./images/Logo_neighbourgood.png) }
-  &.project4Logo { background-Image: url(./images/Logo_Love.png) }
-  &.project5Logo { background-Image: url(./images/Logo_NFL.png) }
+  &.nflPicksLogo { background-Image: url(./images/Logo_NFL.png) }
 }
 
-.projectDetails {
-  pointer-events: none;
-  width: 100%;
-  height: 400px;
-  &.projectDetails1 { display: none }
-  &.projectDetails2 { display: none }
-  &.projectDetails3 { display: none }
-  &.projectDetails4 { display: none }
-  &.projectDetails5 { display: none }
+
+.projectInfoContainer {
+  height: 32%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.projectDetailsContainer {
+.deviceContainer {
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
-  height: 400px;
-  width: 100%;
-}
-
-.projectTextContainer {
-  width: 40%;
-  height: 400px;
-  text-align: left;
-}
-
-.projetScreenshotContainer {
-  width: 45%;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.projectScreenshot {
-  width: 100%;
-  height: 250px;
-  border: 1px solid white;
-  background-size: cover;
-  &.projectScreenshot1 { background-image: url(./images/ScreenShotProject1.png) }
-  &.projectScreenshot2 { background-image: url(./images/ScreenShotProject2.png) }
-  &.projectScreenshot3 { background-image: url(./images/ScreenShotProject3.png) }
-  &.projectScreenshot4 { background-image: url(./images/ScreenShotProject4.png) }
-  &.projectScreenshot5 { background-image: url(./images/ScreenShotProject5.png) }
-}
-
-
-.projectText {
-  color: white;
-  pointer-events: none;
-  text-align: left;
-}
-
-
-
-.details {
-  width: 50%;
-  height: 400px;
-  background-color: lightblue;
-}
-
-
-.mobileProject {
-  width: 100%;
-  min-height: 100px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-@media only screen and (max-width: 600px), screen and (max-height: 400px) {
-  .projectContainer {
-    justify-content: space-between;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow: hidden;
-  }
-  .gap { display: none }
-  .project {
-    width: 100%;
-    height: 100px;
-    flex-shrink: 1;
-    flex-basis: auto;
-  }
-  .projectLogo {
-    margin-top: 10px;
-    height: 50px;
-    background-size: contain;
-  }
-  a.projectTechnology {
-    display: flex;
-    flex-direction: column;
-    }
-  .projetScreenshotContainer {
-    display: flex;
-    width: 100%;
-  }
-  .projectTechnologies {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  .projectDetails { height: 200px }
-  .projectDetailsContainer {
-    height: 400px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .projectTextContainer {
-    height: 300px;
-    width: 80%;
-  }
-  .projectScreenshot { display: none }
 }

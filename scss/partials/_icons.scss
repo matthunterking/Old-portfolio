@@ -27,7 +27,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: $textColor;
   width: 25%;
 }
 
@@ -38,7 +38,7 @@
   align-items: center;
   color: white;
   width: 10%;
-  font-size: 14px;
+		font-size: 14px;
 }
 
 .projectIcon {
@@ -57,8 +57,11 @@
   margin-right: 10px;
 }
 
+.hoverHighlight:hover {
+	color: #FF7D08;
+}
+
 @media only screen and (max-width: 600px) {
-  .projectTechnology { display: none }
   .aboutIcon {
     font-size: 30px;
     margin-bottom: 5px;
